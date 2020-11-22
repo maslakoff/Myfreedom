@@ -1,0 +1,113 @@
+body {
+    min-height: 100vh;
+    background-image: url(../Image/grape.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: #FFFAF3;
+    max-width: 1080px;
+    margin: auto;
+}
+header {
+    height: 100.5px;
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: #C08D5D 1px solid ;
+    display: inline-block;
+    padding-top: 43px;
+    margin-bottom: 122.5px;
+}
+    .logo {
+        float: left;
+        width: 39px;
+        height: 59px;
+    }
+    ul {
+        margin-left: 83px;
+        padding: 0;
+        float: right;
+    }
+        ul li {
+            display: inline-block;
+            text-transform: capitalize;
+            font-size: 20px;
+            line-height: 27px;
+            font-weight: 400;
+            margin-right: 47px;
+        }
+            ul a {
+                text-decoration: none;
+                color: #000000;
+            }
+            ul span {
+                color: #C08D5D;
+            }
+section {
+    font-family: 'Open Sans', sans-serif;
+    color: #3F4042;
+}
+    section > h1 {
+        text-transform: uppercase;
+        font-family: 'Yeseva One', cursive;
+        font-size: 70px;
+        font-weight: 400;
+        margin-bottom: 21px;
+    }
+    section > h1::after {
+        display: block;
+        content: '';
+        background-image: url(../Image/wave.svg);
+        width: 165px;
+        height: 14px;
+        margin-top: 40px;
+    }
+        section > h1 span {
+            display: block;
+            text-transform: capitalize;
+            font-size: 50px;
+            margin-bottom: 11px;
+        }
+        section > h1 span::after {
+            display: inline-block;
+            content: '';
+            background-image: url(../Image/Logo.svg);
+            width: 45px;
+            height: 69px;
+            vertical-align: sub;
+            margin-left: 8px;
+        }
+    section > p {
+        font-weight: 400;
+        font-size: 20px;
+        max-width: 535px;
+        margin-bottom: 72px;
+    }
+    section > a {
+        font-weight: 400;
+        color: #3F4042;
+        text-decoration: none;
+        font-size: 20px;
+        border: 2px solid #C08D5D;
+        padding-left: 15px;
+        display: inline-block;
+        margin-bottom: 63px;
+    }
+        section > a::after {
+            display: inline-block;
+            content: '';
+            background-image: url(../Image/arrow.svg);
+            background-color: #C08D5D;
+            background-position: center;
+            background-size: 17px;
+            width: 55px;
+            height: 55px;
+            background-repeat: no-repeat;
+            margin-left: 11px;
+            vertical-align: middle;
+        }
+footer {
+    margin-bottom: 69px;
+}
+    footer > svg {
+        width: 34px;
+        margin: auto;
+        display: block;
+    }
