@@ -103,11 +103,11 @@ section {
             margin-left: 11px;
             vertical-align: middle;
         }
-footer {
+/* div {
     margin-bottom: 69px;
 }
-    footer > svg {
-        width: 34px;
-        margin: auto;
-        display: block;
-    }
+div > svg {
+    width: 34px;
+    margin: auto;
+    display: block;
+} */
