@@ -102,9 +102,16 @@ footer {
     width: 100%;
     z-index: 10;
 }
-.content > img {
+.icons {
+    background-image: url(../images/icons.png);
+    background-repeat: repeat no-repeat;
+    background-attachment: fixed;
+    background-position-y: 112px;
+    background-size: 39px;
+    height: 100%;
+    width: 39px;
     position: absolute;
     top: 2px;
-    left: -37px;
+    left: -40px;
 }
   
