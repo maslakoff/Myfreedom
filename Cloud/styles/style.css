@@ -102,16 +102,28 @@ footer {
     width: 100%;
     z-index: 10;
 }
-.icons {
-    background-image: url(../images/icons.png);
-    background-repeat: repeat no-repeat;
-    background-attachment: fixed;
-    background-position-y: 112px;
-    background-size: 39px;
-    height: 100%;
-    width: 39px;
+.social {
+    width: 36px;
+    height: 106px;
     position: absolute;
-    top: 2px;
-    left: -40px;
+    top: 4px;
+    left: -36px;
+    z-index: 2;
+}
+.fixed {
+    position: fixed;
+}
+.social a {
+    background-image: url(../images/icons.png);
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+}
+.facebook {
+    background-position: 0 -36px;
+}
+.vimeo {
+    background-position: 0 -72px;
 }
   
