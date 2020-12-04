@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Пожалуйста, укажите Ваше имя и фамилию.</h1>
+        <p class="info">Чтобы облегчить общение и поиск друзей, у нас приняты настоящие <span>имена и фамилии.</span></p>
+        <div class="main-content">
+            <form action="#">
+                <div class="username-wrap">
+                    <input type="text" name="first name" placeholder="Ваше имя">
+                    <input type="text" name="last name" placeholder="Ваша фамилия">
+                </div>
+                <p class="date">
+                    Дата рождения
+                </p>
+                <div class="userbirthday-wrap">
+                    <select name="userbirthday__day">
+                        <option value="День" selected>День</option>
+                        <option value="День">7</option>
+                        <option value="День">14</option>
+                        <option value="День">21</option>
+                    </select>
+                    <select name="userbirthday__month">
+                        <option value="Месяц" selected>Месяц</option>
+                        <option value="Месяц">Июль</option>
+                        <option value="Месяц">Ноябрь</option>
+                        <option value="Месяц">Апрель</option>
+                    </select>
+                    <select name="userbirthday__year">
+                        <option value="Год" selected>Год</option>
+                        <option value="Год">1988</option>
+                        <option value="Год">1996</option>
+                        <option value="Год">2004</option>
+                    </select>
+                </div>
+                <button>Зарегистрироваться</button>
+            </form>
+            <p class="main-choice">или</p>
+            <a href="https://www.facebook.com/" target="_blank">Продолжить с Facebook</a>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <form action="#">
+        <div>
+            <label for="">Ваше имя:</label>
+            <input type="text" name="name" placeholder="Александр" required>
+        </div>
+        <div>
+            <label for="">Пароль:</label>
+            <input type="password" placeholder="Пароль" disabled>
+        </div>
+        <input type="color">
+        <input type="number">
+        <input type="email">
+        <input type="search">
+        <input type="file">
+        <div class="choice">
+            <label><input type="radio" name="choice" checked>Да</label>
+        </div>
+        <div>
+            <input type="radio" name="choice" id="no">
+            <label for="no">Нет</label>
+        </div>
+        <div class="list">
+            <p>Выберите что-то</p>
+            <span><label><input type="checkbox" name="something">Что-то один</label></span>
+            <span><label><input type="checkbox" name="something" checked>Что-то два</label></span>
+            <span><label><input type="checkbox" name="something">Что-то три</label></span>
+        </div>
+        <label>Твой любимый город:
+            <select name="city">
+                <option value="">Минск</option>
+                <option value="">Варшава</option>
+                <option value="" selected>Прага</option>
+            </select>
+        </label>
+        <label>Твой нелюбимый город:
+            <select name="not" multiple>
+                <option value="">Минск</option>
+                <option value="">Варшава</option>
+                <option value="">Прага</option>
+            </select>
+        </label>
+        <label>
+            <textarea name="message" placeholder="Оставьте комметарий..."></textarea>
+            
+        </label>
+    </form>
+</body>
+</html>

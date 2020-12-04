@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:focus {
+    outline: none;
+}
+body {
+    background-color: #f5f6f9;
+    height: 150vh;
+}
+main {
+    max-width: 1122px;
+    margin: auto;
+    text-align: center;
+    margin-top: 85px;
+}
+main > h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+main > .info {
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 67px;
+}
+main span {
+    display: block;
+}
+.main-content {
+    max-width: 539px;
+    margin: auto;
+}
+.username-wrap {
+    display: flex;
+    flex-direction: column;
+}
+form {
+    margin-bottom: 31px;
+}
+form input {
+    height: 69px;
+    margin-bottom: 30px;
+    border: 2px #bdc5cd solid;
+    border-radius: 5px;
+    font-size: 29px;
+    padding-left: 25px;
+}
+form input:last-child {
+    margin-bottom: 35px;
+}
+form input:focus::placeholder {
+    opacity: 0.5;
+}
+.main-content .date {
+    font-size: 24px;
+    font-weight: 700;
+    color: #818181;
+    text-align: start;
+    margin-bottom: 25px;
+}
+.userbirthday-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+}
+select {
+    height: 70px;
+    width: 27%;
+    border: 2px #bdc5cd solid;
+    border-radius: 5px;
+    font-size: 29px;
+    padding-left: 20px;
+    color: #696c6f;
+    cursor: pointer;
+    /* Default arrow disable */
+    appearance: none;
+    /* Custom arrow image */
+    background-image: url(../images/down-arrow.svg);
+    background-size: 20px;
+    background-position: right 18px center;
+    background-repeat: no-repeat;
+}
+select[name="userbirthday__month"] {
+    width: 37%;
+}
+button {
+    width: 100%;
+    height: 70px;
+    background-color: #50a442;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: 500;
+}
+button:hover {
+    background-color: #448f38;
+    cursor: pointer;
+}
+.main-choice {
+    color: #696c6f;
+    font-size: 28px;
+    margin-bottom: 31px;
+}
+.main-choice::after, .main-choice::before {
+    content: "";
+    display: inline-block;
+    width: 76px;
+    height: 2px;
+    background-color: #d4d6d9;
+    vertical-align: middle;
+    margin: 0 20px;
+}
+main a {
+    display: block;
+    background-color: #3351a2;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+    line-height: 40px;
+    padding: 15px 0;
+}
+main a:hover {
+    background-color: #2b4487;
+}

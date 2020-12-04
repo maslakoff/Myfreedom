@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+form div {
+    display: block;
+    margin: 20px;
+}
+.choice input{
+    margin-right: 5px;
+}
+.list span {
+    display: block;
+    margin: 10px 0;
+}
+select:focus {
+    outline: none;
+}
+select {
+    overflow: hidden;
+}
+form > label {
+    margin: 20px;
+}
+textarea {
+    height: 80px;
+    width: 300px;
+    padding-left: 20px;
+    resize: none;
+    font-size: 20px;
+}
+textarea::placeholder {
+    color: red;
+    font-size: 30px;
+    font-style: italic;
+    opacity: 0.7;
+}
+textarea:focus::placeholder {
+    opacity: 0;
+    transition: opacity 1s;
+}
