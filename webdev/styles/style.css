@@ -5,11 +5,8 @@
     font-family: 'Roboto';
 }
 header {
-    background-image: url(../image/bg-image-header.png);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    margin-bottom: 120px;
+    width: 100%;
+    position: absolute;
 }
 .header-logo {
     position: absolute;
@@ -20,10 +17,9 @@ header {
 nav {
     max-width: 582px;
     margin: auto;
+    margin-top: 38px;
     display: flex;
     justify-content: space-between;
-    padding-top: 38px;
-    margin-bottom: 171px;
 }
 nav ul {
     display: flex;    
@@ -47,26 +43,33 @@ nav .first-link {
     border-bottom: 1px solid #fff;
 }
 .title {
+    padding-top: 228px;
     text-align: center;
     color: #fff;
-    margin-bottom: 197px;
+    background-image: url(../image/bg-image-header.png);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 120px;
 }
-.title h1 {
+.title-text {
+    margin-bottom: 196px;
+}
+.title-text > h1 {
     text-transform: uppercase;
     font-size: 64px;
     font-weight: 700;
     letter-spacing: 4.5px;
     margin-bottom: 22px;
 }
-.title p {
+.title-text > p {
     font-size: 18px;
     font-weight: 400;
     max-width: 504px;
     margin: auto;
-    margin-bottom: 41px;
+    margin-bottom: 43px;
     line-height: 1.4;
 }
-.title a {
+.title-text > a {
     color: #fff;
     text-transform: uppercase;
     font-size: 14px;
@@ -75,7 +78,7 @@ nav .first-link {
     background-color: #00afdb;
     padding: 15px 47px;
 }
-.title a:hover {
+.title-text > a:hover {
     background-color: #009CC2;
 }
 .title-links {
