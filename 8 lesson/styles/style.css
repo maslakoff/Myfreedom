@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    max-width: 1146px;
+    margin: auto;
+    padding-top: 61px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 41px
+}
+header > a {
+    text-decoration: none;
+    font-weight: 900;
+    color: #30124E;
+    font-size: 24px;
+}
+header > ul {
+    display: flex;
+    list-style: none;
+    text-transform: capitalize;
+}
+header > ul li {
+    margin: 0 27px;
+}
+header > ul a {
+    color: #30233D;
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none;
+}
+header > p {
+    color: #30233D;
+    font-size: 14px;
+    font-weight: 800;
+}
+.title {
+    background-image: url(../images/bg-title.png);
+    background-size: cover;
+    padding: 135px 0;
+    margin-bottom: 72px;
+}
+.title-contain {
+    max-width: 1146px;
+    margin: auto;
+}
+.title-contain > h1 {
+    color: #FCFCFC;
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 80px;
+}
+.title-contain > p {
+    color: #F4F4ED;
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-weight: 800;
+    line-height: 37px;
+}
+.about-us {
+    max-width: 1146px;
+    margin: auto;
+}
+.about-us > h2 {
+    line-height: 26px;
+    letter-spacing: 6px;
+    font-size: 12.6px;
+    font-weight: 800;
+    color: #F61067;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.about-us > p {
+    max-width: 754px;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 40px;
+    margin-bottom: 60px;
+}
+.about-us__blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 91px;
+}
+.about-us__block {
+    flex-basis: 362px;
+    border: 1px solid rgba(246, 16, 103, 0.5);
+    padding: 0 36px;
+    padding-top: 54px;
+    padding-bottom: 58px;
+}
+.about-us__block > img {
+    border-radius: 40px;
+    border: 1px solid rgba(246, 16, 103, 0.5);
+    padding: 22px;
+    margin-bottom: 18px;
+}
+.about-us__block > h2 {
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 40px;
+    color: #30233D;
+    margin-bottom: 13px;
+}
+.about-us__block > p {
+    font-size: 16.2px;
+    line-height: 26px;
+    color: #30233D;
+}
+

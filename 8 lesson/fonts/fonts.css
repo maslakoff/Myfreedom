@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'SansitaSwashed';
+  src: url('./SansitaSwashed-SemiBold.eot');
+  src: url('./SansitaSwashed-SemiBold.eot?#iefix') format('embedded-opentype'),
+       url('./SansitaSwashed-SemiBold.woff') format('woff'),
+       url('./SansitaSwashed-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SansitaSwashed';
+  src: url('./SansitaSwashed-Regular.eot');
+  src: url('./SansitaSwashed-Regular.eot?#iefix') format('embedded-opentype'),
+       url('./SansitaSwashed-Regular.woff') format('woff'),
+       url('./SansitaSwashed-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SansitaSwashed';
+  src: url('./SansitaSwashed-Medium.eot');
+  src: url('./SansitaSwashed-Medium.eot?#iefix') format('embedded-opentype'),
+       url('./SansitaSwashed-Medium.woff') format('woff'),
+       url('./SansitaSwashed-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SansitaSwashed';
+  src: url('./SansitaSwashed-Light.eot');
+  src: url('./SansitaSwashed-Light.eot?#iefix') format('embedded-opentype'),
+       url('./SansitaSwashed-Light.woff') format('woff'),
+       url('./SansitaSwashed-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SansitaSwashed';
+  src: url('./SansitaSwashed-ExtraBold.eot');
+  src: url('./SansitaSwashed-ExtraBold.eot?#iefix') format('embedded-opentype'),
+       url('./SansitaSwashed-ExtraBold.woff') format('woff'),
+       url('./SansitaSwashed-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SansitaSwashed';
+  src: url('./SansitaSwashed-Bold.eot');
+  src: url('./SansitaSwashed-Bold.eot?#iefix') format('embedded-opentype'),
+       url('./SansitaSwashed-Bold.woff') format('woff'),
+       url('./SansitaSwashed-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SansitaSwashed';
+  src: url('./SansitaSwashed-Black.eot');
+  src: url('./SansitaSwashed-Black.eot?#iefix') format('embedded-opentype'),
+       url('./SansitaSwashed-Black.woff') format('woff'),
+       url('./SansitaSwashed-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
+
+

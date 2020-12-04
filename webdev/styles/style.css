@@ -43,7 +43,6 @@ nav .first-link {
     border-bottom: 1px solid #fff;
 }
 .title {
-    padding-top: 228px;
     text-align: center;
     color: #fff;
     background-image: url(../image/bg-image-header.png);
@@ -51,42 +50,52 @@ nav .first-link {
     background-size: cover;
     margin-bottom: 120px;
 }
-.title-text {
-    margin-bottom: 196px;
+.title-bgcolor {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 228px;
 }
-.title-text > h1 {
+.title h1 {
     text-transform: uppercase;
     font-size: 64px;
     font-weight: 700;
     letter-spacing: 4.5px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
-.title-text > p {
+.title p {
     font-size: 18px;
     font-weight: 400;
     max-width: 504px;
     margin: auto;
-    margin-bottom: 43px;
+    margin-bottom: 30px;
     line-height: 1.4;
 }
-.title-text > a {
+main .button {
+    display: block;
+    height: 46px;
+    width: 184px;
     color: #fff;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
     text-decoration: none;
     background-color: #00afdb;
-    padding: 15px 47px;
+    padding-top: 15px;
+    text-align: center;
 }
-.title-text > a:hover {
+main .button:hover {
     background-color: #009CC2;
 }
-.title-links {
-    text-align: center;
+.title-bgcolor > a {
+    margin: 0 auto 183px;
+}
+.title ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
     padding-bottom: 85px;
 }
-.title-links a {
-    margin: 0 13px;
+.title-bgcolor > ul a {
+    margin: 0 15px;
 }
 .tasks {
     max-width: 1062px;
@@ -95,9 +104,6 @@ nav .first-link {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 140px;
-}
-.tasks-text {
-    margin-top: -15px;
 }
 .tasks-text h2 {
     text-transform: uppercase;
@@ -113,29 +119,17 @@ nav .first-link {
     font-size: 14px;
     line-height: 1.4;
     color: #4e4e4e;
-    margin-bottom: 45px;
+    margin-bottom: 32px;
 }
 .tasks-text span {
     font-weight: 500;
     color: #373737;
 }
-.tasks-text a {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 700;
-    text-decoration: none;
-    background-color: #00afdb;
-    padding: 15px 47px;
-}
-.tasks-text a:hover {
-    background-color: #009CC2;
-}
-
 .community {
     background-color: #f5f6f7;
     position: relative;
     overflow-x: hidden;
+    padding-bottom: 173px;
     margin-bottom: 120px;
 }
 .community-content {
@@ -159,21 +153,20 @@ nav .first-link {
     letter-spacing: 2.4px;
     color: #373737;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 }
 .community-text p {
     font-size: 14px;
-    line-height: 1.4;
+    line-height: 21px;
     color: #4e4e4e;
-    margin-bottom: 177px;
 }
 .community-toggle {
     margin-top: 79px;
-    margin-right: -12px;   
+    margin-right: -11px;
 }
 .community-toggle span {
     font-size: 18px;
-    line-height: 1;
+    vertical-align: middle;
 }
 .community-toggle img {
     margin: 0 11px;
@@ -184,7 +177,7 @@ nav .first-link {
 }
 .community-pic {
     position: absolute;
-    top: 114px;
+    top: 115px;
     left: 50%;
     transform: translateX(-94px);
     display: flex;
@@ -212,7 +205,7 @@ nav .first-link {
     margin: auto;
     display: flex;
     align-items: center;
-    margin-bottom: 135px;
+    margin-bottom: 137px;
 }
 .details-text {
     max-width: 407px;
@@ -224,7 +217,6 @@ nav .first-link {
     letter-spacing: 1px;
     color: #373737;
     text-transform: uppercase;
-    margin-top: -20px;
     margin-bottom: 20px;
 }
 .details-text p {
@@ -232,23 +224,14 @@ nav .first-link {
     font-weight: 400;
     line-height: 1.4;
     color: #4e4e4e;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
+}
+.details-text a {
+    width: 180px;
 }
 .details-text span {
     font-weight: 500;
     color: #373737;
-}
-.details-text a {
-    color: #fff;
-    text-transform: uppercase;
-    padding: 15px 47px;
-    background-color: #00afdb;
-    font-weight: 700;
-    font-size: 14px;
-    text-decoration: none;
-}
-.details-text a:hover {
-    background-color: #009CC2;
 }
 .email-form {
     background-image: url(../image/bg-email-form.png);
@@ -277,7 +260,7 @@ form {
     height: 46px;
     display: flex;
 }
-.email-form input[type="text"] {
+.email-form input[type="email"] {
     width: 340px;
     font-size: 14px;
     line-height: 1.4;
@@ -286,7 +269,7 @@ form {
     vertical-align: middle;
     border: none;
 }
-.email-form input[type="text"]::placeholder {
+.email-form input[type="email"]::placeholder {
     color: #373737;
     opacity: 0.5;
 }
@@ -302,9 +285,9 @@ form {
 .email-form input:focus {
     outline: none;
 }
-.email-form input[type="text"]:focus::placeholder {
+.email-form input[type="email"]:focus::placeholder {
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: opacity 1s;
 }
 .email-form input[type="submit"]:hover {
     background-color: #009CC2;
