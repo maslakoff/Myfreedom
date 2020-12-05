@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Mplus1p';
+    src: url('./Mplus1p-Black.eot');
+    src: url('./Mplus1p-Black.eot?#iefix') format('embedded-opentype'),
+        url('./Mplus1p-Black.woff2') format('woff2'),
+        url('./Mplus1p-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mplus1p';
+    src: url('./Mplus1p-ExtraBold.eot');
+    src: url('./Mplus1p-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('./Mplus1p-ExtraBold.woff2') format('woff2'),
+        url('./Mplus1p-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mplus1p';
+    src: url('./Mplus1p-Bold.eot');
+    src: url('./Mplus1p-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./Mplus1p-Bold.woff2') format('woff2'),
+        url('./Mplus1p-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mplus1p';
+    src: url('./Mplus1p-Light.eot');
+    src: url('./Mplus1p-Light.eot?#iefix') format('embedded-opentype'),
+        url('./Mplus1p-Light.woff2') format('woff2'),
+        url('./Mplus1p-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mplus1p';
+    src: url('./Mplus1p-Regular.eot');
+    src: url('./Mplus1p-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./Mplus1p-Regular.woff2') format('woff2'),
+        url('./Mplus1p-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mplus1p';
+    src: url('./Mplus1p-Medium.eot');
+    src: url('./Mplus1p-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./Mplus1p-Medium.woff2') format('woff2'),
+        url('./Mplus1p-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mplus1p';
+    src: url('./Mplus1p-Thin.eot');
+    src: url('./Mplus1p-Thin.eot?#iefix') format('embedded-opentype'),
+        url('./Mplus1p-Thin.woff2') format('woff2'),
+        url('./Mplus1p-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

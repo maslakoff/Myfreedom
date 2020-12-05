@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Mplus1p';
 }
 header {
     max-width: 1146px;
@@ -10,38 +11,49 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 41px
+    margin-bottom: 48px
 }
 header > a {
     text-decoration: none;
     font-weight: 900;
     color: #30124E;
     font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
 }
 header > ul {
     display: flex;
     list-style: none;
     text-transform: capitalize;
+    margin-left: 25px;
+    padding-top: 5px;
 }
 header > ul li {
-    margin: 0 27px;
+    margin: 0 28px;
+}
+header > ul li:last-child {
+    margin-top: -1px;
 }
 header > ul a {
     color: #30233D;
     font-size: 14px;
     font-weight: 800;
     text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 30px;
 }
-header > p {
+header > a[href="tel:(01)666-693-456"] {
     color: #30233D;
-    font-size: 14px;
+    font-size: 14.4px;
     font-weight: 800;
+    letter-spacing: 2px;
+    padding-top: 7px;
 }
 .title {
     background-image: url(../images/bg-title.png);
     background-size: cover;
-    padding: 135px 0;
-    margin-bottom: 72px;
+    padding: 124px 0 131px;
+    margin-bottom: 68px;
 }
 .title-contain {
     max-width: 1146px;
@@ -52,6 +64,7 @@ header > p {
     font-size: 54px;
     font-weight: 500;
     line-height: 80px;
+    margin-bottom: 6px;
 }
 .title-contain > p {
     color: #F4F4ED;
@@ -59,6 +72,7 @@ header > p {
     letter-spacing: 4px;
     font-weight: 800;
     line-height: 37px;
+    text-transform: uppercase;
 }
 .about-us {
     max-width: 1146px;
@@ -71,32 +85,36 @@ header > p {
     font-weight: 800;
     color: #F61067;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 }
 .about-us > p {
     max-width: 754px;
     font-weight: 500;
     font-size: 27px;
     line-height: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 61px;
 }
 .about-us__blocks {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 91px;
+    margin-bottom: 90px;
 }
 .about-us__block {
     flex-basis: 362px;
     border: 1px solid rgba(246, 16, 103, 0.5);
-    padding: 0 36px;
+    padding: 0 34px;
     padding-top: 54px;
-    padding-bottom: 58px;
+    padding-bottom: 62px;
 }
-.about-us__block > img {
-    border-radius: 40px;
+.about-us__blockslogo {
+    border-radius: 50%;
     border: 1px solid rgba(246, 16, 103, 0.5);
-    padding: 22px;
-    margin-bottom: 18px;
+    width: 72px;
+    height: 72px;
+    margin-bottom: 16px;
+    background-image: url(../images/about-pic.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .about-us__block > h2 {
     font-weight: 500;
@@ -105,9 +123,35 @@ header > p {
     color: #30233D;
     margin-bottom: 13px;
 }
+.about-us__blocks > .js h2 {
+    margin-left: 8px;
+}
 .about-us__block > p {
     font-size: 16.2px;
     line-height: 26px;
     color: #30233D;
 }
-
+footer {
+    background: linear-gradient(180deg, #33008D 0%, #150433 100%);
+}
+.footer-text {
+    height: 198px;
+    max-width: 1146px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FCFCFC;
+}
+.footer-text a {
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 43px;
+    text-decoration: none;
+    color: #FCFCFC;
+}
+.footer-text > p {
+    font-size: 11.7px;
+    line-height: 19px;
+}
