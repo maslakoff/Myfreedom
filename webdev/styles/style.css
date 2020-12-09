@@ -17,6 +17,8 @@ header {
 nav {
     max-width: 582px;
     margin: auto;
+}
+.header-nav {
     margin-top: 38px;
     display: flex;
     justify-content: space-between;
@@ -61,11 +63,13 @@ nav .first-link {
     letter-spacing: 4.5px;
     margin-bottom: 20px;
 }
+.title-text {
+    max-width: 504px;
+    margin: auto;
+}
 .title p {
     font-size: 18px;
     font-weight: 400;
-    max-width: 504px;
-    margin: auto;
     margin-bottom: 30px;
     line-height: 1.4;
 }
@@ -97,13 +101,15 @@ main .button:hover {
 .title-bgcolor > ul a {
     margin: 0 15px;
 }
-.tasks {
+.tasks-wrap {
     max-width: 1062px;
     margin: auto;
+}
+.tasks {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 140px;
+    margin-bottom: 137px;
 }
 .tasks-text h2 {
     text-transform: uppercase;
@@ -132,19 +138,21 @@ main .button:hover {
     padding-bottom: 173px;
     margin-bottom: 120px;
 }
-.community-content {
+.community-wrap {
     max-width: 1062px;
     margin: auto;
+}
+.community-content {
     display: flex;
     justify-content: space-between;
 }
 .community-text {
     max-width: 298px;
     text-align: center;
-    margin-top: 151px;
+    padding-top: 155px;
 }
 .community-text img {
-    margin-bottom: 16px;
+    margin-bottom: 17px;
 }
 .community-text h3 {
     font-size: 16px;
@@ -153,11 +161,11 @@ main .button:hover {
     letter-spacing: 2.4px;
     color: #373737;
     text-transform: uppercase;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
 }
 .community-text p {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 20px;
     color: #4e4e4e;
 }
 .community-toggle {
@@ -177,7 +185,7 @@ main .button:hover {
 }
 .community-pic {
     position: absolute;
-    top: 115px;
+    top: 118px;
     left: 50%;
     transform: translateX(-94px);
     display: flex;
@@ -200,12 +208,14 @@ main .button:hover {
     height: 244px;
     width: 407px;
 }
-.details {
+.details-wrap {
     max-width: 1062px;
     margin: auto;
+}
+.details {
     display: flex;
     align-items: center;
-    margin-bottom: 137px;
+    margin-bottom: 136px;
 }
 .details-text {
     max-width: 407px;
@@ -239,8 +249,8 @@ main .button:hover {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 219px;
+    padding-top: 199px;
+    padding-bottom: 220px;
     position: relative;
 }
 .email-form p {
@@ -295,7 +305,7 @@ form {
 .download {
     text-align: center;
     background-color: #f5f6f7;
-    padding-top: 120px;
+    padding-top: 119px;
     padding-bottom: 180px;
 }
 .download h3 {
@@ -310,43 +320,38 @@ form {
     max-width: 480px;
     margin: auto;
     font-size: 14px;
-    line-height: 1.4;
+    line-height: 21px;
     color: #4e4e4e;
-    margin-bottom: 31px;
+    margin-bottom: 28px;
 }
-.download-button {
-    display: flex;
-    justify-content: center;
-}
-.download-button div {
-    height: 46px;
-    background-color: #00afdb;
-    margin: 0 17px;
-}
-.download-button div:hover {
-    background-color: #009CC2;
-}
-.download-button a {
-    color: #fff;
-    text-decoration: none;
+.download a {
+    display: inline-block;
     text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
     font-size: 14px;
+    background-color: #00afdb;
+    margin: 0 13px;
 }
 .appstore-link {
-    margin-left: 18px;
+    padding-left: 18px;
 }
 .playmarket-link {
-    margin-left: 16px;
+    padding-left: 16px;
 }
-.download-button a::after {
-    display: inline-block;
-    content: '';
-    width: 59px;
-    height: 46px;
+.download a:hover {
     background-color: #009CC2;
+}
+.download a::after {
+    content: '';
+    display: inline-block;
+    background-color: #009CC2;
+    height: 46px;
+    width: 59px;
+    vertical-align: middle;
     background-repeat: no-repeat;
     background-position: center;
-    vertical-align: middle;
 }
 .appstore-link::after {
     background-image: url(../image/icon-apple.svg);
