@@ -180,7 +180,7 @@ form > button:focus {
 .why-us {
     max-width: 1104px;
     margin: auto;
-    padding: 207px 0 71px;
+    padding: 207px 0 54px;
     color: #ffffff;
 }
 .why-us > h2 {
@@ -514,7 +514,7 @@ form > button:focus {
     height: 330px;
 }
 .carousel ol {
-    bottom: 35px;
+    bottom: 20px;
 }
 .carousel li {
     width: 8px;
