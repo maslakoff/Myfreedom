@@ -13,6 +13,9 @@ a {
     text-decoration: none;
     color: #fff;
 }
+a:hover {
+    color: #fff;
+}
 header {
     width: 100%;
     margin: auto;
@@ -120,6 +123,9 @@ form input, select {
     margin-bottom: 21.5px;
     padding-left: 13px;
     appearance: none;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
 }
 form > input {
     background-image: url(../images/search.svg);
@@ -381,7 +387,7 @@ form > button:focus {
 }
 .main-blog-bgcolor {
     background-color: rgba(31, 31, 31, 0.65);
-    padding: 53px 10px 267px;
+    padding: 53px 10px 252px;
 }
 .main-blog h3 {
     font-size: 34px;
@@ -406,7 +412,7 @@ form > button:focus {
     color: #fff;
 }
 .other-blog__text {
-    padding: 20px 20px 18px;
+    padding: 20px 18px 18px;
     height: 261px;
     display: flex;
     flex-direction: column;
@@ -498,18 +504,6 @@ form > button:focus {
     color: #ffb800;
     margin-bottom: 23px;
 }
-.reviews > span {
-    display: inline-block;
-    margin: 0 4px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-.reviews > span:hover {
-    background-color: #fff;
-    cursor: pointer;
-}
 .reviews > img[alt="review-bg"] {
     position: absolute;
     top: 50%;
@@ -520,8 +514,13 @@ form > button:focus {
     height: 330px;
 }
 .carousel ol {
-    position: absolute;
     bottom: 35px;
+}
+.carousel li {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0 6px;
 }
 .carousel img {
     width: 96px;
@@ -539,6 +538,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-bottom: 10px;
+    align-items: center;
 }
 footer p {
     font-size: 13px;
@@ -547,6 +547,8 @@ footer p {
 }
 footer table {
     border-spacing: 0 23px;
+    caption-side: top;
+    border-collapse: inherit;
 }
 footer td {
     color: #fff;
@@ -558,6 +560,7 @@ footer caption {
     color: #ffb800;
     font-size: 13px;
     line-height: 1.23;
+    padding-top: 0;
 }
 .first-col {
     color: #ffb800;
@@ -672,6 +675,7 @@ footer caption {
         z-index: 2;
         background-color: #141413;
         box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.25);
+        padding: 0;
     }
     nav li {
         border: #333333 1px solid;
@@ -728,20 +732,26 @@ footer caption {
 
 @media (max-width: 768px) {
     .directions {
-        padding: 0;
+        padding-top: 40px;
     }
     .directions > h2 {
         font-size: 30px;
-        margin-bottom: 0;
+        margin-bottom: 30px;
     }
     .directions-blocks {
-        margin-bottom: 0;
+        margin-bottom: 20px;
+    }
+    .our-blog {
+        padding: 0;
     }
     .statistics-bg {
         display: none;
     }
     .why-us {
         display: none;
+    }
+    .reviews {
+        padding-top: 40px;
     }
     .reviews > h2 {
         font-size: 30px;
@@ -761,7 +771,7 @@ footer caption {
     }
 }
 
-@media (min-width: 320px) and (max-width: 500px) {
+@media (min-width:320px) and (max-width: 500px) {
     .flex-wrap {
         justify-content: space-around;
     }
@@ -782,6 +792,9 @@ footer caption {
         width: 250px;
         margin-bottom: 30px;
     }
+    .invite-form p {
+        text-align: center;
+    }
     form input, select {
         margin-bottom: 10px;
     }
@@ -792,12 +805,15 @@ footer caption {
         margin-right: 0;
         width: inherit;
     }
+    .directions-blocks {
+        /* flex-direction: column; */
+    }
     .directions > h2 {
         font-size: 20px;
         margin-bottom: 30px;
     }
     .directions-block {
-        flex-basis: 250px;
+        flex-basis: 251px;
         margin-bottom: 20px;
     }
     .directions-block img {
@@ -843,7 +859,7 @@ footer caption {
         font-size: 20px;
     }
     .other-blogs_wrap {
-        flex-basis: 250px;
+        flex-basis: 251px;
     }
     .other-blog {
         flex-direction: column;
