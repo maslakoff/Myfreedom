@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAC;EACE,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;CACzB;;AACD,AAAA,CAAC,CAAC;EACE,eAAe,EAAE,IAAI;CACxB;;AACD,AAAA,EAAE,CAAC;EACC,UAAU,EAAE,IAAI;CACnB",
+    "sources": [
+        "../../some HW Ivantsov/scss/reset/reset.scss"
+    ],
+    "names": [],
+    "file": "reset.css"
+}

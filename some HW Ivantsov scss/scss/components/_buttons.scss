@@ -1,0 +1,30 @@
+.see-all {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 216px;
+    @include text (20px, 500, 46px);
+    border-radius: 4px;
+    border: solid 1px #ffb800;
+    &:hover {
+        background-color: #ffb800;
+        color: #000;
+    }
+}
+form {
+    button {
+        height: 36px;
+        background-color: #ffb800;
+        border-radius: 4px;
+        @include text (20px, 500, 1.2);
+        color: #333;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            background-color: #dea30d;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}

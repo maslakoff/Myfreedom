@@ -1,0 +1,153 @@
+@media (max-width: 1274px) {
+    .invite-form {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 1118px) {
+    .directions-blocks {
+        justify-content: space-around;
+    }
+    .why-us-wrap__block {
+        margin-bottom: 20px;
+    }
+    .our-blog__flex {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+        .main-blog {
+            flex-basis: 500px;
+            margin-bottom: 20px;
+        }
+        .other-blogs_wrap {
+            flex-basis: 500px;
+            flex-direction: column;
+            .other-blog {
+                margin-bottom: 20px;
+                display: flex;
+                max-height: 216px;
+                .other-blog__text {
+                    padding: 10px;
+                    height: 100%;
+                    h3 {
+                        font-size: 18px;
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        .flex-wrap {
+            position: fixed;
+            padding: 10px 0;
+            width: 100%;
+            background-color: #333;
+            z-index: 1;
+            > nav {
+                align-self: center;
+            }
+            > a {
+                align-self: flex-end;
+            }
+        }
+        nav {
+            @include flex (flex, flex-start, row-reverse, center);
+            > label {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                position: relative;
+                width: 26px;
+                height: 26px;
+                z-index: 3;
+                span, span::before, span::after {
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #fff;
+                    transition-duration: .5s;
+                }
+                span::before {
+                    content: '';
+                    top: 8px;
+                }
+                span::after {
+                    content: '';
+                    top: -8px;
+                }
+            }      
+            ul {
+                display: none;
+                position: absolute;
+                top: 0;
+                flex-direction: column;
+                z-index: 2;
+                background-color: #141413;
+                box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.25);
+                padding: 0;
+                li {
+                    border: #333333 1px solid;
+                    margin: 0;
+                    padding-left: 10px;
+                    &:last-child {
+                        margin: 0;
+                        border: #333333 1px solid;
+                        border-radius: 0;
+                        text-align: left;
+                    }
+                    &:hover {
+                        background-color: #797871;
+                    }
+                }
+            }
+            a {
+                display: block;
+            }
+            input:checked ~ label > span {
+                transform: rotate(45deg);
+            }
+            input:checked ~ label > span::before {
+                top: 0;
+                transform: rotate(0);
+            }
+            input:checked ~ label > span::after {
+                top: 0;
+                transform: rotate(90deg);
+            }
+            input:checked ~ ul {
+                display: block;
+                position: absolute;
+            }
+        }
+    }
+    .invite-flex {
+        padding-top: 70px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .why-us {
+        padding-top: 100px;
+        .why-us-wrap {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+    .statistics-info {
+        transform: scale(.8);
+    }
+}
+@media (max-width: 986px) {
+    .invite-flex {
+        .invite-text {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+}

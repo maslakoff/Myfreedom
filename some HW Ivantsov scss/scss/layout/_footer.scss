@@ -1,0 +1,45 @@
+footer {
+    background-color: #1b1e22;
+    p {
+        @include text (13px, 400, 1.23);
+        color: $some-color;
+    }
+    table {
+        border-spacing: 0 23px;
+        caption-side: top;
+        border-collapse: inherit;
+        td {
+            color: $text_color;
+            @include text (13px, 400, 1.23);
+            padding-right: 26px;
+        }
+        caption {
+            color: $some-color;
+            padding-top: 0;
+            @include text (13px, 400, 1.23);
+        }
+    }
+    .first-col {
+        color: $some-color;
+    }
+    .telenum {
+        padding-right: 35px;
+    }
+    .social-network {
+        border-spacing: 0 6px;
+        td {
+            padding-right: 25px;
+            &:last-child {
+                padding-right: 6px;
+            }
+        }
+    }
+}
+.about-us {
+    max-width: 872px;
+    margin: auto;
+}
+.about-us-flex {
+    @include flex (flex, space-between, row, center);
+    padding-bottom: 10px;
+}

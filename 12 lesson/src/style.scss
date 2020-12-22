@@ -1,0 +1,73 @@
+$link_color: red;
+$text_color: darkgray;
+$font_family: Tahoma, Arial;
+
+%text {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1;
+    font-family: $font_family;
+    color: $text_color; 
+}
+
+@mixin flex ($display, $justify, $align, $direction) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: aquamarine;
+    .container {
+        @include flex(flex, space-between, center, row);
+        padding: 30px 0;
+        ul {
+            @include flex(flex, space-between, center, row);
+            list-style: none;
+            text-transform: uppercase;
+            a {
+                text-decoration: none;
+                margin: 0 10px;
+                @extend %text;
+                color: $link_color;
+                &:hover {
+                    color: desaturate($color: $link_color, $amount: 50%)
+                }
+            }
+        }
+    }
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+main {
+    @extend %text;
+    background-color: springgreen;
+    padding: 50px 0;
+    h2 {
+        text-align: center;
+        margin-bottom: 40px
+    }
+    .flex-wrap {
+        div {
+            margin-right: 30px;
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+}
+.flex-wrap {
+    @include flex(flex, space-between, center, row);
+}
+footer {
+    @extend %text;
+    background-color: chocolate;
+}

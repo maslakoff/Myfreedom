@@ -6,116 +6,204 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson 11</title>
     <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/all.min.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item first active">
-                <h2>
-                    Welcome to our web site
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur.
-                </p>
+    <header>
+        <div class="header-wrap header-flex">
+            <img src="./images/logo.png" alt="logo">
+            <ul>
+                <li><a class="fas fa-rss" href="#"></a></li>
+                <li><a class="fab fa-facebook-f" href="#"></a></li>
+                <li><a class="fab fa-twitter" href="#"></a></li>
+                <li><a class="fab fa-linkedin-in" href="#"></a></li>
+            </ul>
+        </div>
+    </header>
+    <nav class="nav-flex">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">service</a></li>
+            <li><a href="#">pages</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">contact us</a></li>
+        </ul>
+        <form action="#">
+            <input type="search" placeholder="Search Something">
+        </form>
+    </nav>
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item first active">
+                    <h2>
+                        Welcome to our web site
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                </div>
+                <div class="carousel-item second">
+                    <h2>
+                        Lorem, ipsum dolor.
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, quas?
+                    </p>
+                </div>
+                <div class="carousel-item third">
+                    <h2>
+                        Lorem, ipsum.
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                </div>
+                <div class="carousel-item fourth">
+                    <h2>
+                        Lorem ipsum dolor sit.
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                </div>
+                <div class="carousel-item fifth">
+                    <h2>
+                        Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                </div>
             </div>
-            <div class="carousel-item second">
-                <h2>
-                    Welcome to our web site
-                </h2>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, quas?
-                </p>
-            </div>
-            <div class="carousel-item third">
-                <h2>
-                    Welcome to our web site
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur.
-                </p>
-            </div>
-            <div class="carousel-item fourth">
-                <h2>
-                    Welcome to our web site
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur.
-                </p>
-            </div>
-            <div class="carousel-item fifth">
-                <h2>
-                    Welcome to our web site
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur.
-                </p>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+        <div class="container">
+            <h2>
+                Lorem Ipsum is <span>simply dummy</span> of the printing.
+            </h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make atype specimen book.
+                It has survived not only five centuries.
+                but also the leap into electronic typesetting, remaining essentially unchanged.
+            </p>
+            <div class="row">
+                <a class="col-sm-12 col-md-4 some-class" href="#">
+                    <div class="move">
+                        <i class="fas fa-desktop fa-7x"></i>
+                        <h3>
+                            <span>Lorem Ipsum</span> is simply
+                        </h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting of the industry. Lorem
+                            Ipsum has been
+                        </p>
+                    </div>
+                </a>
+                <a class="col-sm-12 col-md-4 some-class" href="#">
+                    <div class="move">
+                        <i class="fas fa-edit fa-7x"></i>
+                        <h3>
+                            <span>Lorem Ipsum</span> is simply
+                        </h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting of the industry. Lorem
+                            Ipsum has been
+                        </p>
+                    </div>
+                </a>
+                <a class="col-sm-12 col-md-4 some-class" href="#">
+                    <div class="move">
+                        <i class="far fa-image fa-7x"></i>
+                        <h3>
+                            <span>Lorem Ipsum</span> is simply
+                        </h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting of the industry. Lorem
+                            Ipsum has been
+                        </p>
+                    </div>
+                </a>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </a>
-    </div>
-    <div class="container">
-        <h2>
-            Lorem Ipsum is <span>simply dummy</span> of the printing.
-        </h2>
-        <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make atype specimen book.
-            It has survived not only five centuries.
-            but also the leap into electronic typesetting, remaining essentially unchanged.
-        </p>
-        <div class="row">
-            <div class="col-sm-6 col-md-4 some-class">
-                <div class="move">
-                    <img src="./images/logo.png" alt="">
+        <div class="info">
+            <div class="row info-blocks info-flex">
+                <div class="some-info-block col-xl-4 col-lg-6 col-12">
+                    <img src="./images/img-one.png" alt="">
                     <h3>
-                        <span>Lorem Ipsum</span> is simply
+                        Lorem Ipsum is simply
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illo a quasi.-sm
+                        Lorem Ipsum is simply dummy text of the printing and typesetting of the
                     </p>
                 </div>
-            </div>
-            <div class="col-sm-6 col-md-4 some-class">
-                <div class="move">
-                    <img src="./images/logo.png" alt="">
+                <div class="some-info-block col-xl-4 col-lg-6 col-12">
+                    <img src="./images/img-two.png" alt="">
                     <h3>
-                        <span>Lorem Ipsum</span> is simply
+                        Lorem Ipsum is simply
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illo a quasi.-sm
+                        Lorem Ipsum is simply dummy text of the printing and typesetting of the
                     </p>
                 </div>
-            </div>
-            <div class="col-sm-6 col-md-4 some-class">
-                <div class="move">
-                    <img src="./images/logo.png" alt="">
+                <div class="some-info-block col-xl-4 col-lg-6 col-12">
+                    <img src="./images/img-three.png" alt="">
                     <h3>
-                        <span>Lorem Ipsum</span> is simply
+                        Lorem Ipsum is simply
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illo a quasi.-sm
+                        Lorem Ipsum is simply dummy text of the printing and typesetting of the
+                    </p>
+                </div>
+                <div class="some-info-block col-xl-4 col-lg-6 col-12">
+                    <img src="./images/img-four.png" alt="">
+                    <h3>
+                        Lorem Ipsum is simply
+                    </h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting of the
+                    </p>
+                </div>
+                <div class="some-info-block col-xl-4 col-lg-6 col-12">
+                    <img src="./images/img-five.png" alt="">
+                    <h3>
+                        Lorem Ipsum is simply
+                    </h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting of the
+                    </p>
+                </div>
+                <div class="some-info-block col-xl-4 col-lg-6 col-12">
+                    <img src="./images/img-six.png" alt="">
+                    <h3>
+                        Lorem Ipsum is simply
+                    </h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting of the
                     </p>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
     <script src="./js/bootstrap.min.js"></script>
 </body>
 

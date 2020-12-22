@@ -1,0 +1,18 @@
+$link_color: #fff;
+$text_color: #fff;
+$some-color: #ffb800;
+@mixin block-pos {
+    max-width: 1128px;
+    margin: auto;
+}
+@mixin flex ($display, $justify, $direction, $align) {
+    display: $display;
+    justify-content: $justify;
+    flex-direction: $direction;
+    align-items: $align;
+}
+@mixin text ($size, $weight, $height) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+}

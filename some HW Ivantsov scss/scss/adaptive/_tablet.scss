@@ -1,0 +1,37 @@
+@media (max-width: 768px) {
+    .directions {
+        padding-top: 40px;
+        > h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+    }
+    .our-blog {
+        padding: 0;
+    }
+    .statistics-bg {
+        display: none;
+    }
+    .why-us {
+        display: none;
+    }
+    .reviews {
+        padding-top: 40px;
+        > h2 {
+            font-size: 30px;
+        }
+        .review-comment {
+            font-size: 20px;
+        }
+    }
+    .carousel {
+        transform: scale(.8);
+        ol {
+            bottom: 0;
+        }
+    }
+    .about-us-flex {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}

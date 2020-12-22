@@ -805,9 +805,6 @@ footer caption {
         margin-right: 0;
         width: inherit;
     }
-    .directions-blocks {
-        /* flex-direction: column; */
-    }
     .directions > h2 {
         font-size: 20px;
         margin-bottom: 30px;

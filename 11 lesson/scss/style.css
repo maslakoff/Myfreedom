@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #c1c1c1;
+}
+a:hover {
+    color: #c1c1c1;
+}
+header {
+    background-color: #252323;
+}
+.header-wrap {
+    max-width: 980px;
+    margin: auto;
+    padding: 16px 10px;
+}
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    height: 23px;
+}
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+header li a {
+    margin-left: 25px;
+}
+nav {
+    max-width: 980px;
+    margin: auto;
+}
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    padding: 35px 0;
+    margin: 0;
+    list-style: none;
+}
+nav ul a {
+    color: #8b8b8b;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 15px 30px 10px;
+}
+nav li a:hover {
+    color: #00bac6;
+    border-bottom: 2px solid #00bac6; 
+}
+nav input {
+    width: 196px;
+    height: 35px;
+    border: 1px solid #d6d6d6;
+    padding-left: 19px;
+    background-image: url(../images/loupe.svg);
+    background-position: right 11px center;
+    background-repeat: no-repeat;
+    background-size: 19px;
+    font-size: 13px;
+    color: #a6a6a6; 
+}
+nav input::placeholder {
+    color: #a6a6a6; 
+    transition: opacity 1s;   
+}
+nav input:focus::placeholder {
+    opacity: 0;
+}
+nav input:focus {
+    outline: none;
+}
+.carousel-item {
+    padding-top: 200px;
+    text-align: center;
+    color: #fff;
+    height: 475px;
+}
+.carousel li {
+    opacity: 1;
+    border: 4px solid #fff;
+    background-color: transparent;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.carousel-indicators li.active {
+    background-color: #00bac6;
+}
+.first {
+    background-image: url(../images/header-img.png);
+    background-size: cover;
+}
+.second {
+    background-image: url(../images/carousel_l11_1.jpg);
+    background-size: cover;
+}
+.third {
+    background-image: url(../images/carousel_l11_2.jpg);
+    background-size: cover;
+}
+.fourth {
+    background-image: url(../images/carousel_l11_3.jpg);
+    background-size: cover;
+}
+.fifth {
+    background-image: url(../images/carousel_l11.jpg);
+    background-size: cover;
+}
+.container {
+    padding-top: 50px;
+    color: #cacaca;
+    text-align: center;
+}
+.container h2 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.container p {
+    margin-bottom: 40px;
+}
+.container span {
+    font-weight: 700;
+    color: #8d8d8d;
+}
+.some-class::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 50px solid #eeeeee;
+    border-left: 80px solid transparent;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.some-class:hover::after {
+    opacity: 1;
+}
+.some-class i {
+    margin-bottom: 15px;
+}
+.some-class:hover i {
+    color: #00bac6;
+}
+.some-class:hover > .move {
+    transform: translateY(35px);
+    cursor: pointer;
+}
+.some-class > .move {
+    transition: transform .5s;
+}
+.move > img {
+    color: #00bac6;
+}
+.info {
+    background-color: #eeeeee;
+}
+.info-blocks {
+    max-width: 980px;
+    margin: auto;
+    padding: 35px 0 45px;
+}
